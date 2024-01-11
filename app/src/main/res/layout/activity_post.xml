@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activitys.PostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:background="#98190F">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="CREAR PUBLICACIÓN"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/SubirImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/upload_image"
+                        android:scaleType="centerCrop"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/SubirImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/upload_image"
+                        android:scaleType="centerCrop"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_games"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="5dp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/CampoNombreJuego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre del juego"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_baseline_description_24"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="5dp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/CampoDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:hint="Descriptción"
+                    android:maxLines="4"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextViewCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CATEGORIAS"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"/>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/grey"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="30dp"
+           android:layout_marginLeft="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="@color/DarkBlue"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/imagePc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_pc"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PC"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    app:cardBackgroundColor="@color/DarkBlue"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/imagePs4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_ps4"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PS4"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    app:cardBackgroundColor="@color/DarkBlue"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageXbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_xbox"
+                        android:padding="5dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XBOX"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    app:cardBackgroundColor="@color/DarkBlue"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageNintendo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_nintendo"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NINTENDO"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BotonPublicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PUBLICAR"
+        android:background="@drawable/radius_botton"
+        android:backgroundTint="#98190F"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"
+        android:textColor="@color/white" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImageBack"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_margin="15dp"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
